@@ -1,0 +1,354 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     16822,        346]
+NotebookOptionsPosition[     15495,        313]
+NotebookOutlinePosition[     16104,        335]
+CellTagsIndexPosition[     16061,        332]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+Universidad de Ja\[EAcute]n. EPS Ja\[EAcute]n.
+Departamento de Matem\[AAcute]ticas. Grado en Ingenier\[IAcute]a Inform\
+\[AAcute]tica
+An\[AAcute]lisis y M\[EAcute]todos Num\[EAcute]ricos. 
+F. Javier Mu\[NTilde]oz Delgado\
+\>", "Text",
+ CellChangeTimes->{{3.610967983265625*^9, 3.610968082640625*^9}, {
+  3.6109681208125*^9, 3.61096812653125*^9}, {3.6424687631628585`*^9, 
+  3.6424688524189634`*^9}, {3.6424768284314632`*^9, 3.642476870440866*^9}, {
+  3.645380837468239*^9, 3.6453808480578446`*^9}, {3.6624024369441547`*^9, 
+  3.6624024842138586`*^9}, {3.662413278947282*^9, 3.662413285872678*^9}, {
+  3.6938387361358757`*^9, 3.693838740017098*^9}, {3.7076623057608204`*^9, 
+  3.7076623113258204`*^9}, {3.724511942733601*^9, 3.7245119944476013`*^9}, {
+  3.725424486611616*^9, 3.725424514364016*^9}, {3.8725107934177923`*^9, 
+  3.872510801297286*^9}},
+ FontSize->18,ExpressionUUID->"df2cc2e9-54c5-42cf-888a-b7dc81967b7c"],
+
+Cell["Problemas de examen. Tema 4. Funciones", "Section",
+ CellChangeTimes->{{3.872510817147561*^9, 3.872510846096264*^9}, {
+  3.873124073700885*^9, 3.8731240820469475`*^9}, {3.873939693585183*^9, 
+  3.8739397042742596`*^9}, {3.874022732521471*^9, 
+  3.8740227391868615`*^9}},ExpressionUUID->"d107d7cf-e4f8-4840-aad0-\
+beb7ee40e25e"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\n \t11.- Para resolver la ecuaci\[OAcute]n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["x", "3"], "+", "x"}], "=", "1"}], TraditionalForm]],
+  FontSlant->"Italic",ExpressionUUID->"bf6884cb-9f3b-49ce-8131-7b4263b22c03"],
+ " consideramos la funci\[OAcute]n ",
+ StyleBox["f(x)= ",
+  FontSlant->"Italic"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["x", "3"], "+", "x", "-", "1"}], TraditionalForm]],
+  FontSlant->"Italic",ExpressionUUID->"829efeee-cedb-45e7-8881-b408c3b9bd69"],
+ ". A continuaci\[OAcute]n, evaluamos f(x) en algunos puntos en x=0, en x=1. \
+Estudiar si podemos usar el m\[EAcute]todo de Bisecci\[OAcute]n y aplicarlo \
+tres veces. \n \tJulio 23\n \t"
+}], "Section",
+ CellChangeTimes->{{3.500751345359375*^9, 3.500751379984375*^9}, {
+   3.500790035609375*^9, 3.500790048953125*^9}, {3.569509423875*^9, 
+   3.56950942659375*^9}, {3.570537368580125*^9, 3.57053737997075*^9}, {
+   3.599199111625*^9, 3.5991991196875*^9}, {3.723477468774*^9, 
+   3.723477473212*^9}, {3.723478212648*^9, 3.723478232406*^9}, {
+   3.723478462157*^9, 3.723478463176*^9}, {3.723478670633*^9, 
+   3.723478671652*^9}, {3.72356892631*^9, 3.7235690780550003`*^9}, {
+   3.723569130146*^9, 3.723569177783*^9}, {3.7235692175769997`*^9, 
+   3.723569247399*^9}, {3.723569308648*^9, 3.723569328826*^9}, {
+   3.723569485984*^9, 3.723569513233*^9}, {3.7236081819960003`*^9, 
+   3.7236083309300003`*^9}, {3.7236509376520233`*^9, 3.7236509459610233`*^9}, 
+   3.7236517258530235`*^9, 3.723651765606024*^9, {3.7236521565550237`*^9, 
+   3.7236522309350233`*^9}, {3.7238353873130035`*^9, 3.723835410693304*^9}, {
+   3.7239071598070183`*^9, 3.723907162602418*^9}, {3.724158365534717*^9, 
+   3.724158429733717*^9}, {3.724164938261321*^9, 3.724164963029321*^9}, 
+   3.7254239244656124`*^9, {3.819906851493*^9, 3.8199068540039997`*^9}, 
+   3.821078909739801*^9, 3.8522950828943524`*^9, 3.8826958582925076`*^9, 
+   3.8978281364092655`*^9, {3.9055154881552277`*^9, 3.905515490394063*^9}},
+ FontFamily->"Arial",
+ FontSize->14,
+ FontColor->RGBColor[0., 0.25098039215686274`, 0.5019607843137255],
+ Background->RGBColor[
+  0.807843137254902, 0.9058823529411765, 
+   1.],ExpressionUUID->"b3bf8a98-32b0-4281-99b1-6789130de3a9"],
+
+Cell[TextData[{
+ "Soluci\[OAcute]n: \nLa funci\[OAcute]n f(x) = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["x", "3"], "+", "x", "-", "1"}], TraditionalForm]],
+  FontSlant->"Italic",ExpressionUUID->"bafeb3d4-66f4-4ce7-b397-15a054f1ff15"],
+ " es polin\[OAcute]mica. Por tanto, f es continua en toda la recta real.\n\
+Evaluamos f en 0 y 1: f(0)=-1, f(1)=1. Como la funci\[OAcute]n es continua en \
+[0,1] y hay cambio de signo de la funci\[OAcute]n en los extremos, el teorema \
+de Bolzano asegura que la funci\[OAcute]n se anula en alg\[UAcute]n punto del \
+interior. Podemos aproximarlo por el m\[EAcute]todo de bisecci\[OAcute]n.\n\n\
+Comenzamos por el intervalo [0,1]. a1=0, b1=1, f(0)<0, f(1)>0. \nEl punto \
+medio es m1=(a1+b1)/2=(0+1)/2=1/2. \nf(m1)=f(1/2) = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "/", "2"}], ")"}], "3"], "+", 
+    RowBox[{"(", 
+     RowBox[{"1", "/", "2"}], ")"}], "-", "1"}], TraditionalForm]],
+  FontSlant->"Italic",ExpressionUUID->"9b18f80b-df6d-4d0a-8a5e-41d550ba8609"],
+ "= 1/8 + 1/2 - 1 < 0. \nHay cambio de signo en el intervalo [1/2,1],\n\
+a2=1/2, b2=1. f(1/2)<0, f(1)>0. \nEl punto medio es m2=(a2+b2)/2=(1/2 + \
+1)/2=3/4. \nf(m2)=f(3/4) = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"3", "/", "4"}], ")"}], "3"], "+", 
+    RowBox[{"(", 
+     RowBox[{"3", "/", "4"}], ")"}], "-", "1"}], TraditionalForm]],
+  FontSlant->"Italic",ExpressionUUID->"f99f5764-0e16-4f71-bdbc-a7962e33258d"],
+ " = 27/64 + 3/4 - 1 = 27/64 + 48/64 - 64/64 = 11/64 > 0. \nHay cambio de \
+signo en el intervalo [1/2, 3/4].\na3=1/2, b3=3/4, f(1/2)<0, f(3/4)>0. \nEl \
+punto medio es m3=(a3+b3)/2=(1/2 + 3/4) / 2 = 5/8. \nf(5/8) = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"5", "/", "8"}], ")"}], "3"], "+", 
+    RowBox[{"(", 
+     RowBox[{"5", "/", "8"}], ")"}], "-", "1"}], TraditionalForm]],
+  FontSlant->"Italic",ExpressionUUID->"22a7c543-2875-44e4-a0b7-1067698767ea"],
+ "= 125/512 + 5/8 - 1 = 125/512 + 320/512 - 512/512 = (445-512)/512< 0. \nHay \
+cambio de signo en el intervalo [5/8,3/4]."
+}], "Text",
+ CellChangeTimes->{{3.610967983265625*^9, 3.610968082640625*^9}, {
+   3.6109681208125*^9, 3.61096812653125*^9}, {3.610976777453125*^9, 
+   3.610976922484375*^9}, {3.610977092296875*^9, 3.610977288828125*^9}, {
+   3.6109957936514254`*^9, 3.6109958150390635`*^9}, 3.6109962528538322`*^9, {
+   3.6424694360273438`*^9, 3.6424694787837896`*^9}, {3.6424700316294107`*^9, 
+   3.6424700321944427`*^9}, {3.6424720136857777`*^9, 3.642472061084489*^9}, {
+   3.6454100586949635`*^9, 3.6454100770310125`*^9}, 3.645410430082206*^9, {
+   3.6624089952532687`*^9, 3.6624090425009713`*^9}, {3.662409267561844*^9, 
+   3.662409459075798*^9}, {3.6624097101341577`*^9, 3.6624097110942125`*^9}, {
+   3.662433188751014*^9, 3.6624332023592386`*^9}, {3.6938415743082104`*^9, 
+   3.693841703835619*^9}, {3.693842309229245*^9, 3.693842342670158*^9}, {
+   3.7076626173158207`*^9, 3.7076627588878202`*^9}, {3.7076629091388206`*^9, 
+   3.70766292683782*^9}, {3.7076636380288205`*^9, 3.7076636438088207`*^9}, {
+   3.70766570065182*^9, 3.7076657036808205`*^9}, 3.724512190180803*^9, {
+   3.72451659757423*^9, 3.72451659821883*^9}, {3.7245169889116325`*^9, 
+   3.7245171190878334`*^9}, {3.7245189681796455`*^9, 3.724518968727645*^9}, {
+   3.7245212185880594`*^9, 3.7245212187630596`*^9}, {3.7245217564462633`*^9, 
+   3.7245218160244637`*^9}, {3.819897342892*^9, 3.8198973433380003`*^9}, {
+   3.819897398263*^9, 3.819897517977*^9}, {3.821083680215402*^9, 
+   3.8210837775280023`*^9}, {3.8210838520510025`*^9, 
+   3.8210839784648027`*^9}, {3.8210840141072025`*^9, 
+   3.8210840943922024`*^9}, {3.8210841357064023`*^9, 
+   3.8210841610152025`*^9}, {3.8210841947202024`*^9, 
+   3.8210844419528027`*^9}, {3.821766548218*^9, 3.8217665509370003`*^9}, {
+   3.8522950908545046`*^9, 3.8522951921636467`*^9}, {3.8522952267036915`*^9, 
+   3.8522963427363977`*^9}, {3.88269587020794*^9, 3.8826962161142077`*^9}, {
+   3.8978281999006815`*^9, 3.897828257310665*^9}, {3.8978283180860877`*^9, 
+   3.8978283245461493`*^9}, {3.897828369341268*^9, 3.897828374505206*^9}, {
+   3.8978284455023727`*^9, 3.897828513416579*^9}, {3.8978285629249277`*^9, 
+   3.8978290649927406`*^9}, {3.8978290968167562`*^9, 3.897829110419891*^9}, {
+   3.9059475361133213`*^9, 3.905947539837509*^9}, {3.905947799571636*^9, 
+   3.9059480170007052`*^9}},
+ FontSize->16,ExpressionUUID->"381e9582-ef8f-4e63-9a39-f19f8e9f65c6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\n \t4.- Calcular el dominio de la funci\[OAcute]n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"log", "(", 
+    RowBox[{"\[Sqrt]", 
+     RowBox[{"(", 
+      RowBox[{"x", "+", "1"}], ")"}]}], ")"}], TraditionalForm]],
+  ExpressionUUID->"3a7e3e51-f804-40bf-9ae2-06fd7c62beda"],
+ "\n \t(Junio 21)"
+}], "Section",
+ CellChangeTimes->{{3.500751345359375*^9, 3.500751379984375*^9}, {
+   3.500790035609375*^9, 3.500790048953125*^9}, {3.569509423875*^9, 
+   3.56950942659375*^9}, {3.570537368580125*^9, 3.57053737997075*^9}, {
+   3.599199111625*^9, 3.5991991196875*^9}, {3.723477468774*^9, 
+   3.723477473212*^9}, {3.723478212648*^9, 3.723478232406*^9}, {
+   3.723478462157*^9, 3.723478463176*^9}, {3.723478670633*^9, 
+   3.723478671652*^9}, {3.72356892631*^9, 3.7235690780550003`*^9}, {
+   3.723569130146*^9, 3.723569177783*^9}, {3.7235692175769997`*^9, 
+   3.723569247399*^9}, {3.723569308648*^9, 3.723569328826*^9}, {
+   3.723569485984*^9, 3.723569513233*^9}, {3.7236081819960003`*^9, 
+   3.7236083309300003`*^9}, {3.7236509376520233`*^9, 3.7236509459610233`*^9}, 
+   3.7236517258530235`*^9, 3.723651765606024*^9, {3.7236521565550237`*^9, 
+   3.7236522309350233`*^9}, {3.7238353873130035`*^9, 3.723835410693304*^9}, {
+   3.7239071598070183`*^9, 3.723907162602418*^9}, {3.724158365534717*^9, 
+   3.724158429733717*^9}, {3.724164938261321*^9, 3.724164963029321*^9}, 
+   3.7254239244656124`*^9, {3.819906851493*^9, 3.8199068540039997`*^9}, 
+   3.821078641952401*^9, {3.8349323053221216`*^9, 3.8349323102221217`*^9}, {
+   3.8745912301695595`*^9, 3.874591232385086*^9}},
+ FontFamily->"Arial",
+ FontSize->14,
+ FontColor->RGBColor[0., 0.25098039215686274`, 0.5019607843137255],
+ Background->RGBColor[
+  0.807843137254902, 0.9058823529411765, 
+   1.],ExpressionUUID->"90617888-ca9f-4b56-80fc-001c7ba17bf2"],
+
+Cell[TextData[{
+ "(log, Log o Ln siempre se refiere al logaritmo neperiano o natural. Si en \
+alguna ocasi\[OAcute]n hiciese falta referirse al logaritmo decimal, en base \
+2, u otra, se especificar\[AAcute].)\n\nSoluci\[OAcute]n: El logaritmo se \
+puede calcular de n\[UAcute]meros mayores estrictamente que cero. La ra\
+\[IAcute]z cuadrada de un n\[UAcute]mero es estrictamente mayor que cero si \
+el n\[UAcute]mero al que se calcula es mayor estrictamente que cero. Como la \
+cantidad a la que hay que calcular la ra\[IAcute]z cuadrada es x+1, \
+concluimos que es necesario que x+1 >0. Es decir, x>-1.\n\nEl dominio de la \
+funci\[OAcute]n ser\[IAcute]a (-1,\[Infinity]).\nSi \
+x\[Element](-1,\[Infinity]), x+1 \[Element](0,\[Infinity]) y ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Sqrt]", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}]}], TraditionalForm]],ExpressionUUID->
+  "c6db4b1c-70a0-4a57-867a-cbade084b069"],
+ " >0 y el logaritmo se puede calcular. \n\nDe otra forma:\nLa primera \
+operaci\[OAcute]n es x+1, que puede realizarse para cualquier valor de x. Dom \
+(x+1) = \[DoubleStruckCapitalR].\nA continuaci\[OAcute]n hay que realizar la \
+ra\[IAcute]z cuadrada. Para ello, se necesita que x+1 \[GreaterEqual]0. As\
+\[IAcute],  Dom (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Sqrt]", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}]}], TraditionalForm]],ExpressionUUID->
+  "3e81c8ed-391f-4808-a5cb-ff9815d61ebf"],
+ ") = [-1,\[Infinity]).\n\nFinalmente, la \[UAcute]ltima operaci\[OAcute]n es \
+el logaritmo. Para calcular el logaritmo es necesario que la cantidad sea \
+mayor estricta que cero. \n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Sqrt]", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}]}], TraditionalForm]],ExpressionUUID->
+  "730370cf-a8e2-4459-b873-28b961522189"],
+ " > 0 si (x+1) > 0, es decir x>-1.  \n\nPor tanto, Dom (log( ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Sqrt]", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}]}], TraditionalForm]],ExpressionUUID->
+  "bfbef395-10dd-4af6-ac12-41a3f722e0d1"],
+ " )) = (-1, \[Infinity]).\n\nCon el Mathematica, como el logaritmo est\
+\[AAcute] definido para n\[UAcute]meros mayores que cero, podemos preguntar \
+cu\[AAcute]ndo  \[Sqrt](x+1) es mayor que cero. "
+}], "Text",
+ CellChangeTimes->{{3.610967983265625*^9, 3.610968082640625*^9}, {
+   3.6109681208125*^9, 3.61096812653125*^9}, {3.610976777453125*^9, 
+   3.610976922484375*^9}, {3.610977092296875*^9, 3.610977128578125*^9}, {
+   3.6109952425648575`*^9, 3.6109952441248603`*^9}, {3.6109955953906775`*^9, 
+   3.6109956552947826`*^9}, {3.610995687243639*^9, 3.6109956973836565`*^9}, {
+   3.6109957323901176`*^9, 3.6109957330453196`*^9}, 3.6109957666321783`*^9, {
+   3.642469141291486*^9, 3.6424691492309403`*^9}, {3.6424692330177326`*^9, 
+   3.6424692354268703`*^9}, {3.64247036590553*^9, 3.642470403419676*^9}, {
+   3.6424704600409145`*^9, 3.642470472884649*^9}, {3.64247051766121*^9, 
+   3.64247051836325*^9}, {3.645409285711751*^9, 3.645409289405963*^9}, 
+   3.645410413052232*^9, {3.662404601931985*^9, 3.662404604793149*^9}, {
+   3.662404953031067*^9, 3.6624049846848774`*^9}, {3.6624050879007807`*^9, 
+   3.66240514732718*^9}, {3.6624054345386076`*^9, 3.6624055559915543`*^9}, {
+   3.6624330870778337`*^9, 3.6624331173382874`*^9}, {3.6938531208416343`*^9, 
+   3.6938532058634973`*^9}, {3.693853273181348*^9, 3.6938533831556377`*^9}, 
+   3.6938544672256427`*^9, {3.70766493326482*^9, 3.7076650302488203`*^9}, {
+   3.7076651552308207`*^9, 3.7076651591438203`*^9}, 3.7076656692078204`*^9, 
+   3.7245120852084017`*^9, {3.7245141043476152`*^9, 3.7245141583860154`*^9}, {
+   3.7245159893912263`*^9, 3.724515989891426*^9}, {3.81990105706*^9, 
+   3.81990106051*^9}, {3.8199014056730003`*^9, 3.8199014923310003`*^9}, {
+   3.8199018157939997`*^9, 3.819901829557*^9}, 3.819903585898*^9, {
+   3.8199036277390003`*^9, 3.8199038788050003`*^9}, {3.819903987516*^9, 
+   3.819904065678*^9}, {3.81990410744*^9, 3.8199041652860003`*^9}, {
+   3.819904196186*^9, 3.819904750229*^9}, 3.821078636451601*^9, 
+   3.8210787560300007`*^9, {3.821766302314*^9, 3.821766321709*^9}, {
+   3.834932387359122*^9, 3.8349324276001215`*^9}, {3.834932772069122*^9, 
+   3.834933025898122*^9}, {3.874591262214744*^9, 3.874591818099791*^9}, {
+   3.874975274707096*^9, 3.8749752943819833`*^9}, {3.874975401940002*^9, 
+   3.874975405859373*^9}, {3.905947617961162*^9, 3.905947714592621*^9}},
+ FontSize->16,ExpressionUUID->"058f0151-9892-4796-8887-18cce78f8933"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Reduce", "[", 
+  RowBox[{
+   RowBox[{
+    SqrtBox[
+     RowBox[{"x", "+", "1"}]], ">", "0"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9059477162856393`*^9, 3.90594775031886*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"87bab4b0-d6b2-4f41-b387-dcbb2ef3ebe6"],
+
+Cell[BoxData[
+ RowBox[{"x", ">", 
+  RowBox[{"-", "1"}]}]], "Output",
+ CellChangeTimes->{3.9059477560938816`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"cf4e5149-7017-413a-91c9-73efb630e437"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1152., 585.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+PrintingCopies->1,
+PrintingPageRange->{32000, 32000},
+PrintingOptions->{"Magnification"->1.,
+"PaperOrientation"->"Portrait",
+"PaperSize"->{595.1999999999999, 841.68}},
+FrontEndVersion->"13.0 para Microsoft Windows (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8f001d90-8c1e-4782-9789-bdc8d320c491"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 929, 16, 116, "Text",ExpressionUUID->"df2cc2e9-54c5-42cf-888a-b7dc81967b7c"],
+Cell[1489, 38, 333, 5, 67, "Section",ExpressionUUID->"d107d7cf-e4f8-4840-aad0-beb7ee40e25e"],
+Cell[CellGroupData[{
+Cell[1847, 47, 2247, 43, 109, "Section",ExpressionUUID->"b3bf8a98-32b0-4281-99b1-6789130de3a9"],
+Cell[4097, 92, 4535, 82, 420, "Text",ExpressionUUID->"381e9582-ef8f-4e63-9a39-f19f8e9f65c6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8669, 179, 1806, 34, 88, "Section",ExpressionUUID->"90617888-ca9f-4b56-80fc-001c7ba17bf2"],
+Cell[10478, 215, 4480, 77, 520, "Text",ExpressionUUID->"058f0151-9892-4796-8887-18cce78f8933"],
+Cell[CellGroupData[{
+Cell[14983, 296, 291, 7, 51, "Input",ExpressionUUID->"87bab4b0-d6b2-4f41-b387-dcbb2ef3ebe6"],
+Cell[15277, 305, 190, 4, 32, "Output",ExpressionUUID->"cf4e5149-7017-413a-91c9-73efb630e437"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
